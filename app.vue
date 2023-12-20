@@ -15,6 +15,7 @@
         >
           {{
             k('changeLanguage', {
+              // dynamic referencing example (Interpolation)
               lng: activeLocalization === 'ar' ? 'اللغة' : 'language',
             })
           }}
