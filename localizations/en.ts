@@ -1,7 +1,11 @@
 export default {
   title: "Hello Wrold",
   meta: {
-    title: "Kalemah"
+    title: "Kalemah",
+    description: {
+      d: "= {{dc}}"
+    }
   },
-  changeLanguage: "Change {{lng}}"
+  changeLanguage: "Change {{lng}}",
+
 }
