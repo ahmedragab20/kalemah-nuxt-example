@@ -3,9 +3,8 @@ export default {
   meta: {
     title: "Kalemah",
     description: {
-      d: "= {{dc}}"
+      d: "description is {{dc}}"
     }
   },
-  changeLanguage: "Change {{lng}}",
-
+  changeLanguage: ["change {{lng}}"]
 }

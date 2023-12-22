@@ -3,8 +3,8 @@ export default {
   meta: {
     title: "كلمة",
     description: {
-      d: "= {{dc}}"
+      d: "وصف {{dc}}"
     }
   },
-  changeLanguage: "غير {{lng}}"
+  changeLanguage: ["غير {{lng}}"]
 }

@@ -6,12 +6,14 @@
       </Title>
     </Head>
     <Body>
-      <div class="p-5">
-        <div class="mb-2">{{ k('meta.title') }}</div>
-        <div class="mb-4">
+      <div class="p-5 flex h-screen justify-center items-center flex-col">
+        <div class="mb-2 text-7xl font-extrabold dark:text-primary-400 text-primary-600">
+          {{ k('meta.title') }}
+        </div>
+        <div class="mb-4 capitalize text-lg">
           {{
             k("meta['description'].d", {
-              dc: activeLocalization === 'ar' ? 'وصف جميل 😻' : 'pretty description ❤️‍🔥',
+              dc: activeLocalization === 'ar' ? 'جميل 😻' : 'pretty ❤️‍🔥',
             })
           }}
         </div>
@@ -21,7 +23,7 @@
           @click="swichLanguage"
         >
           {{
-            k('changeLanguage', {
+            k('changeLanguage.0', {
               // dynamic referencing example (Interpolation)
               lng: activeLocalization === 'ar' ? 'اللغة' : 'language',
             })
